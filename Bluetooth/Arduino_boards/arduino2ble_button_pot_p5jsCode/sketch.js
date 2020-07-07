@@ -13,7 +13,7 @@ let myBLE;
 let menu
 
 function setup() {
-  
+
   // Create a p5ble class
   myBLE = new p5ble();
 
@@ -38,19 +38,18 @@ function gotCharacteristics(error, characteristics) {
   console.log('characteristics: ', characteristics, characteristics.length);
   myCharacteristics = characteristics;
 
-  for (let i = 0 ; i < myCharacteristics.length ; i++){
+  for (let i = 0; i < myCharacteristics.length; i++) {
     if (myCharacteristics[i].uuid == "19b10012-e8f2-537e-4f6c-d104768a1211") {
       butChar = characteristics[i];
       myBLE.read(butChar, gotButtonValue);
-    }
-    else if (myCharacteristics[i].uuid == "19b10012-e8f2-537e-4f6c-d104768a1212"){
+    } else if (myCharacteristics[i].uuid == "19b10012-e8f2-537e-4f6c-d104768a1212") {
       potChar = characteristics[i]
       myBLE.read(potChar, gotPotValue);
     }
 
 
   }
-  
+
   //myBLE.read(myCharacteristics.descriptor(1), gotPotValue);
 }
 
@@ -58,7 +57,9 @@ function gotCharacteristics(error, characteristics) {
 function gotButtonValue(error, value) {
   if (error) console.log('error: ', error);
   //console.log('button value: ', value);
-  buttonValue = value;
+  if (value) {
+    buttonValue = value;
+  }
   // After getting a value, call p5ble.read() again to get the value again to create a kind of loop
   myBLE.read(butChar, gotButtonValue);
 }
@@ -68,7 +69,9 @@ function gotButtonValue(error, value) {
 function gotPotValue(error, value) {
   if (error) console.log('error: ', error);
   console.log('pot value: ', value);
-  potValue = value;
+  if (value) {
+    potValue = value;
+  }
   // After getting a value, call p5ble.read() again to get the value again to create a kind of loop
   myBLE.read(potChar, gotPotValue);
 }
@@ -89,7 +92,7 @@ function draw() {
   rect(width / 2, height / 2, width / 3, width / 3, corners)
 
   fill(255, 0, 0)
-  stroke(255,0,0)
+  stroke(255, 0, 0)
   textAlign(CENTER, BOTTOM)
-  text("button value : " + buttonValue + " -  pot value : " + potValue, width / 2 ,height)
+  text("button value : " + buttonValue + " -  pot value : " + potValue, width / 2, height)
 }
