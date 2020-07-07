@@ -37,6 +37,9 @@ function gotCharacteristics(error, characteristics) {
   if (error) console.log('error: ', error);
   console.log('characteristics: ', characteristics, characteristics.length);
   myCharacteristics = characteristics;
+  myBLE.read(characteristics[0], gotButtonValue);
+
+  /*
 
   for (let i = 0; i < myCharacteristics.length; i++) {
     if (myCharacteristics[i].uuid == "19b10012-e8f2-537e-4f6c-d104768a1211") {
@@ -48,20 +51,19 @@ function gotCharacteristics(error, characteristics) {
     }
 
 
-  }
+  }*/
 
-  //myBLE.read(myCharacteristics.descriptor(1), gotPotValue);
 }
 
 // A function that will be called once got values
 function gotButtonValue(error, value) {
   if (error) console.log('error: ', error);
-  //console.log('button value: ', value);
+  console.log('button value: ', value);
   if (value) {
     buttonValue = value;
   }
   // After getting a value, call p5ble.read() again to get the value again to create a kind of loop
-  myBLE.read(butChar, gotButtonValue);
+  myBLE.read(characteristics[0], gotButtonValue);
 }
 
 
