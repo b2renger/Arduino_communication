@@ -40,12 +40,12 @@ function gotCharacteristics(error, characteristics) {
 
   for (let i = 0 ; i < myCharacteristics.length ; i++){
     if (myCharacteristics[i].uuid == "19b10012-e8f2-537e-4f6c-d104768a1211") {
-      butChar = i;
-      myBLE.read(myCharacteristics[i], gotButtonValue);
+      butChar = characteristics[i];
+      myBLE.read(butChar, gotButtonValue);
     }
     else if (myCharacteristics[i].uuid == "19b10012-e8f2-537e-4f6c-d104768a1212"){
-      potChar = i
-      myBLE.read(myCharacteristics[i], gotPotValue);
+      potChar = characteristics[i]
+      myBLE.read(potChar, gotPotValue);
     }
 
 
@@ -60,7 +60,7 @@ function gotButtonValue(error, value) {
   //console.log('button value: ', value);
   buttonValue = value;
   // After getting a value, call p5ble.read() again to get the value again to create a kind of loop
-  myBLE.read(myCharacteristics[butChar], gotButtonValue);
+  myBLE.read(butChar, gotButtonValue);
 }
 
 
@@ -70,7 +70,7 @@ function gotPotValue(error, value) {
   console.log('pot value: ', value);
   potValue = value;
   // After getting a value, call p5ble.read() again to get the value again to create a kind of loop
-  myBLE.read(myCharacteristics[potChar], gotPotValue);
+  myBLE.read(potChar, gotPotValue);
 }
 
 function draw() {
