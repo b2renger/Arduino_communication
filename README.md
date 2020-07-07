@@ -32,9 +32,13 @@ How to make arduino cards communicate with other programms or with each other us
 
 ### 1sheeld
 
-### p5js ble
-
 ### processing serial
+
+### p5js ble
+https://create.arduino.cc/projecthub/jingwen_zhu/getting-started-with-p5-ble-js-using-arduino-nano-33-ble-120ea6
+https://www.uuidgenerator.net/
+
+
 
 --- 
 ## Infra-red
