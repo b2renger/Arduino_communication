@@ -15,28 +15,38 @@ function setup() {
   connectButton.mousePressed(connectToBle);
 
   menu = QuickSettings.create(0, 0, 'options')
+  menu.setWidth(windowWidth/2)
 
   menu.addButton("Connect", connectToBle)
 
   menu.addRange("Red", 0, 255, 100, 1, function (v) {
-    if(connected) myBLE.write(myCharacteristic[0], v);
+    if (connected) {
+      myBLE.write(myCharacteristic[0], v);
+      myBLE.write(myCharacteristic[3], 1); // to enter the if statement updating pixels values
+    }
   })
 
   menu.addRange("Green", 0, 255, 100, 1, function (v) {
-    if(connected) myBLE.write(myCharacteristic[1], v);
+    if (connected) {
+      myBLE.write(myCharacteristic[1], v);
+      myBLE.write(myCharacteristic[3], 1); // to enter the if statement updating pixels values
+    }
   })
 
   menu.addRange("Blue", 0, 255, 100, 1, function (v) {
-    if(connected) myBLE.write(myCharacteristic[2], v);
+    if (connected) {
+      myBLE.write(myCharacteristic[2], v);
+      myBLE.write(myCharacteristic[3], 1); // to enter the if statement updating pixels values
+    }
   })
 
 
   menu.addButton("On", function () {
-    if(connected)myBLE.write(myCharacteristic[3], 1);
+    if (connected) myBLE.write(myCharacteristic[3], 1);
   })
 
   menu.addButton("Off", function () {
-    if(connected) myBLE.write(myCharacteristic[3], 0);
+    if (connected) myBLE.write(myCharacteristic[3], 0);
   })
 
 
