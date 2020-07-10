@@ -1,30 +1,45 @@
 # Arduino_communication
-How to make arduino cards communicate with other programms or with each other using serial / wifi / bluetooth or infra red
+
+**Work in progress**
+
+How to make arduino cards communicate with other programms or with each other using :
+- serial (usb + bluetooth serial)
+- wifi 
+- ble 
+- infra red
+
+The motto is analogIN <=> digitalOut
+
+Boads targetted : 
+- Arduino Uno wifi rev2 / Arduino Nano iot 33 (ble)
+- Feather Huzzah 8266 (wifi => only one analog in)
+- Feather Esp32 (wifi + ble)
+- Sparkfun ESP32 Thing (wifi + ble)
+
+Programs targetted :
+- Processing
+- p5js
+- cablesgl
+- Touch Designer
+- Unity
+- Unreal ?
 
 ---
 ## Serial communication
 
-### Processing
 
-#### Arduino to Processing
 
-#### Processing to Arduino
+## Bluetooth Serial
 
-### P5js
-
-#### Arduino to p5js
-
-#### p5js to Arduino
-
-### Unity
 
 --- 
 
 ## Wifi
 
-### OSC (board 2 board - processing - cablesgl - touchdesigner - unity)
+### OSC 
+https://github.com/lwoodbury/Huzzah32OSC
 
-### httpGet et httpPost (p5js)
+### httpGet et httpPost 
 
 ---
 
@@ -32,7 +47,8 @@ How to make arduino cards communicate with other programms or with each other us
 
 ### 1sheeld
 
-### processing serial
+### bluetooth serial
+https://circuitdigest.com/microcontroller-projects/using-classic-bluetooth-in-esp32-and-toogle-an-led
 
 ### p5js ble
 https://create.arduino.cc/projecthub/jingwen_zhu/getting-started-with-p5-ble-js-using-arduino-nano-33-ble-120ea6
