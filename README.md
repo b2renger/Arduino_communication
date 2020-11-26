@@ -3,16 +3,16 @@
 **Work in progress**
 
 How to make arduino cards communicate with other programms or with each other using :
-- serial (usb + bluetooth serial)
-- wifi 
-- ble 
-- infra red
+- serial 
+- wifi (udp/osc , http)
+- bluetooth ( 1sheeld / bluetooth serial / ble )
+- MQTT
 
 The motto is analogIN <=> digitalOut
 
 Boads targetted : 
 - Arduino Uno wifi rev2 / Arduino Nano iot 33 (ble)
-- Feather Huzzah 8266 (wifi => only one analog in)
+- Feather Huzzah 8266 (wifi)
 - Feather Esp32 (wifi + ble)
 - Sparkfun ESP32 Thing (wifi + ble)
 
@@ -26,10 +26,6 @@ Programs targetted :
 
 ---
 ## Serial communication
-
-
-
-## Bluetooth Serial
 
 
 --- 
