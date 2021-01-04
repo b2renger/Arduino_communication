@@ -64,3 +64,11 @@ https://www.uuidgenerator.net/
 
 --- 
 ## Infra-red
+
+
+---
+
+## Radio
+https://www.gotronic.fr/art-module-rf-434-mhz-wrl-12823-25308.htm
+https://www.carnetdumaker.net/articles/communiquer-sans-fil-en-433mhz-avec-la-bibliotheque-virtualwire-et-une-carte-arduino-genuino/
+http://robotlabo.eu/pageTuto/tutoSansFil.html
