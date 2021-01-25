@@ -1,12 +1,16 @@
 # Arduino_communication
 
-**Work in progress**
+**Work in progress - thinking it through for now**
+
+
 
 How to make arduino cards communicate with other programms or with each other using :
 - serial 
 - wifi (udp/osc , http)
 - bluetooth ( 1sheeld / bluetooth serial / ble )
 - MQTT
+- radio ?
+- ifttt ?
 
 The motto is analogIN <=> digitalOut
 
@@ -23,6 +27,10 @@ Programs targetted :
 - Touch Designer
 - Unity
 - Unreal ?
+
+Easy access ressources through : 
+- 1Sheeld
+- Blynk 
 
 ---
 ## Serial communication
@@ -41,6 +49,10 @@ https://github.com/lwoodbury/Huzzah32OSC
 https://github.com/mqttjs/MQTT.js
 https://github.com/256dpi/processing-mqtt
 https://github.com/256dpi/arduino-mqtt
+
+
+https://cables.gl/op/Ops.Net.Mqtt.Mqtt_v2s
+https://cables.gl/docs/3_communication/mqtt_arduino/mqtt_arduino
 
 Brokers :
 https://www.shiftr.io/cloud#pricing
