@@ -40,15 +40,13 @@ Easy access ressources through :
 
 ---
 ## Serial communication
-This means via a USB cable ! (Universal Serial Bus)
+FIY USB means Universal Serial Bus, so the serial port is the USB port so we program a way to pass from one device to another information via a USB connection.
 
 ### Arduino and processing
 
 In this part we will focus on the use of the serial port and we are going : from an arduino program write sensor values ​​in a serial port that we can then recover in a [processing](https://processing.org/) program.
 
 We can do the same in the other direction: that is, send processing information to arduino.
-
-FIY USB means Universal Serial Bus, so the serial port is the USB port so we program a way to pass from one device to another information via a USB connection.
 
 [**home**](#Contents)
 
@@ -60,7 +58,7 @@ The first program will use a distance sensor and the distance detected by our se
 
 As a reminder, the wiring of the distance sensor is as follows :
 
-<img src="read_from_IRDistance/read_from_irdistance.png" width="480" height="270" /><br>
+<img src="assets/read_from_irdistance.png" width="480" height="370" /><br>
 
 We will use the sample code provided in the processing video library. Available in the examples browser: *Exemples* -> *Libraries* -> *Video* -> *Movie* -> *Speed*
 
@@ -300,7 +298,7 @@ The logic of this animation is very similar to the previous one. We will replace
 <img src="assets/serial_photores_to_animation.gif" width="480" height="270" /><br>
 
 The wiring is a photoresistor connected to A0.
-<img src="read_from_photores/read_from_photores.png" width="480" height="270" /><br>
+<img src="assets/read_from_photores.png" width="480" height="270" /><br>
 
 The arduino code is almost the same, we will just adapt the identifier in our json that will store our value:
 
@@ -527,7 +525,7 @@ This third example will illustrate the reverse communication: we will send data 
 
 The electrical diagram is simple: it is about connecting a ribbon of LEDs on an arduino card:
 
-<img src="set_neopixel_rgb/set_neopixels.png" width="480" height="270" /><br>
+<img src="assets/set_neopixels.png" width="480" height="270" /><br>
 
 The processing program will use the HSB mode to adjust the hue according to the position on the absciss of the mouse, the saturation according to the ordinate position of the mouse and the brightness according to the state of the mouse (is it whether the button is pressed or not?) This data will be mapped to processing and written to the serial port for reuse in arduino. We will send 3 values, these values ​​will be separated by commas and we will use a semicolon to mark the end of a data packet.
 
@@ -646,7 +644,7 @@ In our case we will record the analog data from two photoresistors, they will be
 
 The circuit is a fairly classic circuit:
 
-<img src="serial_enregistrer_des_donnees_dans_un_fichier/read_from_photores_x2.png" width="480" height="360" /><br>
+<img src="serial/processing/serial_enregistrer_des_donnees_dans_un_fichier/read_from_photores_x2.png" width="480" height="360" /><br>
 
 ##### Code arduino
 
