@@ -30,17 +30,22 @@ Easy access ressources through :
 - Blynk 
 
 ## Contents
-* [Serial communication](#Serial-communication)
+* [Cable communication](#Cable-communication)
     * [Arduino and processing](#Arduino-and-processing) <br>
       * [Control video playback with a distance sensor](#Control-video-playback-with-a-distance-sensor) <br>
       * [Control an animation with a photoresistor](#Control-an-animation-with-a-photoresistor) <br>
       * [Control neopixels leds with the mouse](#Control-neopixels-leds-with-the-mouse) <br>
       * [Save data to a file on your computer](#Save-data-to-a-file) <br>
-
+* [Wifi](#Wifi)
+* [Bluetooth](#Bluetooth)
+* [Infra-red](#Infra-red)
+* [Radio](#Radio)
 
 ---
-## Serial communication
+## Cable communication
 FIY USB means Universal Serial Bus, so the serial port is the USB port so we program a way to pass from one device to another information via a USB connection.
+
+Code examples will be found in the "Serial" folder
 
 ### Arduino and processing
 
@@ -808,11 +813,27 @@ After making a recording, remember to rename the file *data.json* with a new nam
 
 ## Wifi
 
+For arduino we will use the [wifi manager library](https://github.com/tzapu/WiFiManager)
+This library will open the possibility to run on esp32 and esp8266 like chips. There is no need for hardcoded wifi ssid or password. If a connection to a specific network is not made, the library will create a captiv portal for you to connect to so that you can enter the credentials of the desired network.
+
+[**home**](#Contents)
+
 ### OSC 
-https://fredrikolofsson.com/f0blog/f0dmx/
-https://github.com/lwoodbury/Huzzah32OSC
+
+On the arduino side we will depend on this library for easy construction of udp messages : https://github.com/CNMAT/OSC
+
+#### Processing
+
+This project will get you started with easy interface prototyping with processing (desktop and android).
+https://github.com/b2renger/processing_osc_controller
+
+It supports auto-discovery of the devices on the same network listenning on a specific port, and for android it supports sending the data of a few snesors.
+
+[**home**](#Contents)
 
 ### httpGet et httpPost 
+
+[**home**](#Contents)
 
 ### MQTT
 https://github.com/mqttjs/MQTT.js
@@ -828,28 +849,45 @@ https://www.shiftr.io/cloud#pricing
 https://io.adafruit.com/
 https://www.maqiatto.com/
 
+[**home**](#Contents)
+
 ---
 
 ## Bluetooth
 
+[**home**](#Contents)
 
 ### 1sheeld
 
+[**home**](#Contents)
+
 ### bluetooth serial
 https://circuitdigest.com/microcontroller-projects/using-classic-bluetooth-in-esp32-and-toogle-an-led
+
+thanks @emoc    
+
+http://www.martyncurrey.com/bluetooth-control-panel/
+https://play.google.com/store/apps/details?id=com.keuwl.arduinobluetooth&hl=fr&gl=US
+
+[**home**](#Contents)
 
 ### p5js ble
 https://create.arduino.cc/projecthub/jingwen_zhu/getting-started-with-p5-ble-js-using-arduino-nano-33-ble-120ea6
 https://www.uuidgenerator.net/
 
+[**home**](#Contents)
 
 
 --- 
 ## Infra-red
 
-
+[**home**](#Contents)
 ---
 ## Radio
+
+
 https://www.gotronic.fr/art-module-rf-434-mhz-wrl-12823-25308.htm
 https://www.carnetdumaker.net/articles/communiquer-sans-fil-en-433mhz-avec-la-bibliotheque-virtualwire-et-une-carte-arduino-genuino/
 http://robotlabo.eu/pageTuto/tutoSansFil.html
+
+[**home**](#Contents)
