@@ -2,6 +2,27 @@
 
 **Work in progress - thinking it through for now**
 
+[x] == done
+
+[/] == needs more testing
+
+[-] == tested but to improve
+
+- [x] BLE arduino IOT (nano33 etc) and p5
+- [/] BLE esp32 (feather) and p5
+- [/] BLE HM10 module and p5
+- [ ] Bluetooth serial (like HC-06) and processing
+- [x] MQTT (esp32 or 8266) and p5
+- [x] MQTT (esp32 or 8266) and cablesgl
+- [-] Serial and processing => add simple example dual without json
+- [ ] Serial and TouchDesigner => communication both ways
+- [ ] Serial and Unity => communication both ways
+- [x] WIFI OSC (esp8266 or esp32) and processing
+- [-] WIFI OSC (esp8266) board to board  => support esp32
+- [-] WIFI OSC (esp8266) and Touch Designer => support esp32
+
+
+
 
 How to make arduino cards communicate with other programms or with each other using :
 - serial 
@@ -19,10 +40,10 @@ Boads targetted :
 
 Programs targetted :
 - Processing
-- p5js
+- p5js (through : https://codesandbox.io/s/nervous-albattani-i3bk8?file=/sketch.js ?)
 - cablesgl
 - Touch Designer
-- Unity
+- Unity ?
 - Unreal ?
 
 Easy access ressources through : 
