@@ -21,6 +21,9 @@
 - [-] WIFI OSC (esp8266) board to board  => support esp32
 - [-] WIFI OSC (esp8266) and Touch Designer => support esp32
 
+- [ ] IR
+- [ ] ifttt
+- [ ] Radio
 
 
 
