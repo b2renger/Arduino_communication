@@ -39,6 +39,11 @@ Programs targetted :
 - Unity 
 - Unreal 
 
+HID behaviors via ble :
+- keyboard
+- mouse
+- gamepad
+
 ---
 ## Todo list
 
@@ -87,6 +92,12 @@ Programs targetted :
   On the arduino side we will depend on this library for easy construction of udp messages
 
 - https://github.com/256dpi/arduino-mqtt
+
+- https://github.com/T-vK/ESP32-BLE-Keyboard
+
+- https://github.com/T-vK/ESP32-BLE-Mouse
+
+- https://github.com/lemmingDev/ESP32-BLE-Gamepad
 
 
 #### Javascript
