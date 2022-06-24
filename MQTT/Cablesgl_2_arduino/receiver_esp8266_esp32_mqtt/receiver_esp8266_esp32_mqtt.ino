@@ -14,9 +14,9 @@ char *espname = "esp8266_mqtt_cablesgl";
 
 // wifi stuff
 // uncomment the 3 lines below if you are working with an esp8266
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
-#include <ESP8266mDNS.h>
+//#include <ESP8266WiFi.h>
+//#include <ESP8266WebServer.h>
+//#include <ESP8266mDNS.h>
 
 #include <WiFiManager.h>
 #include <Ticker.h>
@@ -36,8 +36,9 @@ MQTTClient client;
 
 // wifi connection feedback
 Ticker ticker;
-int LED = LED_BUILTIN;
 #define LED_BUILTIN 13 // ESP32 DOES NOT DEFINE LED_BUILTIN
+int LED = LED_BUILTIN;
+
 
 void tick() {
   digitalWrite(LED, !digitalRead(LED));
