@@ -9,7 +9,7 @@ How to make arduino cards communicate with other programms or with each other
 
 ### Serial
 
-- [How to control video playback in processing with arduino and distance sensor](Serial_Arduino2Processing_distance.md)
+- [How to control video playback in processing with arduino and distance sensor](Serial_Arduino2Processing_distance.md) 
 - [How to control an animation with arduino and a photoresistor](Serial_Arduino2Processing_photoresistance)
 - [How to to save arduino sensor data on a file on your computer](Serial_Arduino2Processing_saveData2json.md)
 - [How to control neopixels leds with your mouse](Serial_Processing2Arduino_mouse2leds.md)
@@ -39,7 +39,7 @@ Programs targetted :
 - Unity 
 - Unreal 
 
-HID behaviors via ble :
+HID behaviors via ble (specially handy to get data in any programm)
 - keyboard
 - mouse
 - gamepad
@@ -47,33 +47,30 @@ HID behaviors via ble :
 ---
 ## Todo list
 
-[V] == done
+[/] == working but needs documentation
 
-[/] == needs more testing
+[] == contribute if you want or ask for it
 
-[-] == needs documentation
+- [/] BLE arduino IOT (nano33 etc) and p5
+- [/] MQTT (esp32 or 8266) and p5
+- [/] MQTT (esp32 or 8266) and cablesgl
+- [/] WIFI OSC (esp8266 or esp32) and processing
 
-[x] == contribute if you want or ask for it
+- [/] BLEKeyboard with ESP32
+- [/] Serial from Arduino Serial Monitor
+- [/] Serial and processing => add simple example without json
+- [/] BLE esp32 (feather) and p5
+- [/] BLE HM10 module and p5
+- [/] WIFI OSC (esp8266) board to board  => support esp32
+- [/] WIFI OSC (esp8266) and Touch Designer => support esp32
+- [/] Serial and TouchDesigner => communication both ways
+- [/] Serial and Unity => communication both ways
+- [/] Wifi OSC Unity => communication both ways
 
-- [V] BLE arduino IOT (nano33 etc) and p5
-- [V] MQTT (esp32 or 8266) and p5
-- [V] MQTT (esp32 or 8266) and cablesgl
-- [V] WIFI OSC (esp8266 or esp32) and processing
-
-- [-] BLEKeyboard with ESP32
-- [-] Serial from Arduino Serial Monitor
-- [-] BLE esp32 (feather) and p5
-- [-] BLE HM10 module and p5
-- [-] WIFI OSC (esp8266) board to board  => support esp32
-- [-] WIFI OSC (esp8266) and Touch Designer => support esp32
-- [-] Serial and processing => add simple example without json
-- [-] Serial and TouchDesigner => communication both ways
-- [-] Serial and Unity => communication both ways
-
-- [x] Bluetooth serial (like HC-06) 
-- [x] IR
-- [x] ifttt
-- [x] Radio
+- [] Bluetooth serial (like HC-06) 
+- [] IR
+- [] ifttt
+- [] Radio
 ---
 
 
